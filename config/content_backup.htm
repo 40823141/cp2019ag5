@@ -5,14 +5,10 @@ function getDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823102&gh_repo=cp2019ag5&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
 }
-
-
-
 function largest(){
 document.getElementById("iframe").width = document.body.clientWidth ;
 document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
 }
-
 function original(){
 document.getElementById("iframe").width = 800 ;
 document.getElementById("iframe").height = 600 ;
@@ -21,7 +17,7 @@ document.getElementById("iframe").height = 600 ;
 <!-- 取 Dart 程式的按鈕 -->
 <h4>純 Dart 程式</h4>
 <p><button onclick="getDart('hello')">Hello</button></p>
-<p><button onclick="getDart('迴圈程式')">迴圈程式</button></p>
+<p><button onclick="getDart('123')">迴圈程式</button></p>
 <!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823102&amp;gh_repo=cp2019ag5&amp;gh_path=downloads/dart_ex/迴圈程式&amp;theme=dark" width="800"></iframe></p><h1>Develop</h1>
